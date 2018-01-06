@@ -1,0 +1,27 @@
+html, body {
+    background-color: black;
+    color: white;
+}
+
+#title {
+    text-align: center;
+    font-size: 72px;
+}
+
+#explanation {
+    text-align: center;
+}
+
+#parent {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    margin: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
