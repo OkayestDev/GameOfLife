@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", start);
 
 var numberOfRows = 50;
 var numberOfCells = 50;
+var chanceToSpawn = 10;
 var widthOfEachCell;
 var heightOfEachCell;
 var windowWidth;
@@ -29,8 +30,8 @@ function buildArrayOfCells() {
 function buildBeginningArray() {
     for (let i = 0; i < numberOfRows; i++) {
         for (let j = 0; j < numberOfCells; j++) {
-            var aliveOrDead = Math.floor((Math.random() * 2));
-            if (aliveOrDead === 1) {
+            var aliveOrDead = Math.floor((Math.random() * 100));
+            if (aliveOrDead <= chanceToSpawn) {
                 arrayOfCells[i][j] = 1;
             }
             else {
